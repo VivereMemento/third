@@ -1,0 +1,67 @@
+
+// ************** header__top *************** //
+
+.header__top {
+  border-bottom: 1px solid #ebedee;
+}
+
+.header__menu {
+  @include clr;
+}
+
+// ************** header__middle ************ //
+
+.header__middle__wrap {
+  padding: 30px 0;
+  border-bottom: 1px solid #ebedee;
+  @include clr;
+}
+
+.header__logo, .callback, .header__search {
+  width: 33.3%;
+}
+
+.callback {
+  padding-top: 8px;
+
+  &__phone-number {
+    margin-right: 10px;
+    font: 400 1.385em/18px $ffL;
+    color: #333;
+  }
+
+  &__button {
+    margin-top: 5px;
+    font: 400 0.923em/12px $ffL;
+    color: #fff;
+    padding: 8px 13px;
+    background-color: $green;
+    border: none;
+    display: block;
+    @include br(3px);
+
+    &:hover {
+      background-color: #4e8401;
+    }
+  }
+}
+
+.header__search {
+  padding: 13px 0;
+  @include clr;
+}
+
+.search {
+  float: right;
+
+  &__input {
+    padding: 10px 25px 8px 35px;
+    font: 400 1em/13px $ffL;
+    border: 1px solid #ebedee;
+    background: url(../img/searchBg.png) no-repeat left 12px top 12px;
+    @include br(50px);
+    @include placeholder {
+      color: #666;
+    }
+  }
+}

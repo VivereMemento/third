@@ -1,0 +1,28 @@
+.navbar {
+  padding: 20px 0;
+  border-bottom: 2px solid #ebedee;
+  text-align: justify;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    font: 700 16px/16px $ffL;
+    color: #333;
+
+    &:hover {
+      color: #EE3F23;
+      text-decoration: none;
+    }
+  }
+
+  &:after {
+    /*эмуляция второй строчки, чтобы можно было 
+    выравнять текст по значению justify*/
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+  }
+}

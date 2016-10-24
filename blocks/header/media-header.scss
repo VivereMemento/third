@@ -1,0 +1,33 @@
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .main-heading {
+    font-size: 1.8em;
+    line-height: 20px;
+  }
+
+  .post-heading {
+    font-size: 1em;
+    text-indent: 90px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .navbar {
+      width: 100%;
+      padding-top: 150px;
+    }
+
+  .header__heading {
+    bottom: 20%;
+  }
+  .main-heading {
+    font-size: 1.8em;
+    line-height: 20px;
+  }
+
+  .post-heading {
+    font-size: 1em;
+    text-indent: 90px;
+  }
+}

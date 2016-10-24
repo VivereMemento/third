@@ -1,0 +1,72 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .nav {
+    height: 100%;
+    padding: 0;
+  }
+
+  .navbar__wrap {
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    }
+
+  .navbar-trigger {
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+  
+  .navbar {
+    width: 30%;
+    height: 100% ;
+    margin: 0;
+    padding-top: 60px;
+    display: none;
+    text-align: center;
+    background-color: fade-out($red, .7);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &__item {
+      width: 100%;
+      display: block;
+      margin-left: 0;
+    }
+
+    &__link {
+      font-size: 1.5em;
+      line-height: 50px;
+      display: inline-block;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .closebtn {
+    display: block;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .navbar__wrap {
+    padding: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .navbar {
+      width: 100%;
+      padding-top: 150px;
+    }
+}
