@@ -1,8 +1,6 @@
-(function ($) {$(document).ready(function () {
+$(document).ready(function() {
 
-  	//slideshow
-    
-	$('.slideshow__pic').on('click', function(e) {
+  $('.slideshow__pic').on('click', function(e) {
     e.preventDefault();
 
     var
@@ -29,7 +27,4 @@
     }
   });
 
-
-  }); //end ready
-
-}(jQuery));
+}); // - > ready_end;

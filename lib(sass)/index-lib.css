@@ -37,3 +37,27 @@
   font-weight: 600;
   font-style: normal;
 }
+
+.toy-name {
+  font: 400 14px/14px "Open Sans", Arial, sans-serif;
+  color: #ff3801;
+}
+
+.title {
+  font: 400 14px/14px "Open Sans", Arial, sans-serif;
+  color: #333;
+}
+
+.price-sale {
+  font: 400 14px/14px "Open Sans", Arial, sans-serif;
+  color: #333;
+  display: block;
+}
+
+.price-sale:after {
+  margin-top: 4px;
+  display: block;
+  content: attr(data-price-actual);
+  text-decoration: line-through;
+  color: #ccc;
+}

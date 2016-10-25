@@ -1,0 +1,32 @@
+.breadcrumbs {
+  padding: 25px 0;
+
+  &__item {
+    margin-left: 10px;
+    display: inline-block;
+
+    &:first-child {
+      margin-left: 0;
+      & .breadcrumbs__link:before {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font: 400 13px/13px $ffO;
+    color: #333;
+
+    &:before {
+      display: inline-block;
+      content: ">";
+      width: 9px;
+      height: 9px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: #333;
+    }
+  }
+}

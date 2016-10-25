@@ -1,0 +1,54 @@
+.slideshow {
+  @include clr;
+
+  &__display {
+    width: 500px;
+    height: 400px;
+    float: left;
+    position: relative;
+
+    &__img {
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0
+    }
+  }
+
+  &__list {
+    margin-right: 2px;
+    float: left;
+  }
+
+  &__item {
+    display: block;
+    border: 1px solid transparent;
+
+
+    &.active {
+      border: 1px solid $green;
+    }
+  }
+
+  &__pic {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: relative;
+
+    &__img {
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      max-width: 70px;
+      max-height: 70px;
+    }
+  }
+}

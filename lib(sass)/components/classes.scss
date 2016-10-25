@@ -1,0 +1,24 @@
+.toy-name {
+	font: 400 14px/14px $ffO;
+	color: $red;
+	text-transform: capitalize;
+}
+
+.title {
+	font: 400 14px/14px $ffO;
+	color: #333;
+}
+
+.price-sale {
+	font: 400 14px/14px $ffO;
+	color: #333;
+	display: block;
+
+	&:after {
+		margin-top: 4px;
+		display: block;
+		content: attr(data-price-actual);
+		text-decoration: line-through;
+		color: #ccc;
+	}
+}
