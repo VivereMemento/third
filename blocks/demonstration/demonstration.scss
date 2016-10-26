@@ -15,14 +15,19 @@
   margin-top: 20px;
   @include clr;
 
-  & .price-sale {
+  & .price-sale_mods {
     font-size: 22px;
     font-weight: 600;
 
     &:after {
+      @extend .price-sale:before;
       margin-top: 15px;
       font-size: 16px;
       font-weight: 400;
+    }
+
+    &:before {
+      display: none;
     }
   }
 }
@@ -71,7 +76,7 @@
   }
 
   &.active .content-size__link {
-    border: 2px solid $red;
+    outline: 2px solid $red;
   }
 }
 
@@ -79,14 +84,15 @@
   display: block;
   width: 40px;
   height: 40px;
-  padding: 10px;
+  padding: 11px;
   font: 400 13px/13px $ffL;
   color: #333;
-  border: 2px solid #ccc;
+  border: 2px solid transparent;
+  outline: 1px solid #ccc;
 
   &:hover {
     text-decoration: none;
-    border: 2px solid $red;
+    outline: 2px solid $red;
   }
 }
 
@@ -97,7 +103,7 @@
   @include clr;
 }
 
-.goods {
+.products {
   float: left;
   width: 50%;
 
@@ -112,7 +118,7 @@
   }
 
   &__button-buy {
-    display: block;
+    display: inline-block;
     width: 160px;
     height: 40px;
     margin-top: 5px;
@@ -151,8 +157,7 @@
   float: left;
 
   &__link {
-    margin-bottom: 10px;
-    font: 400 13px/13px $ffO;
+    font: 400 13px/25px $ffO;
     color: #333;
     text-decoration: underline;
     display: block;

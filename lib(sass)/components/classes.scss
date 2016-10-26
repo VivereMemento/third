@@ -1,24 +1,26 @@
 .toy-name {
-	font: 400 14px/14px $ffO;
-	color: $red;
-	text-transform: capitalize;
+  margin-bottom: 5px;
+  font: 400 14px/14px $ffO;
+  color: $red;
+  text-transform: capitalize;
+  display: block;
 }
 
 .title {
-	font: 400 14px/14px $ffO;
-	color: #333;
+  font: 400 14px/20px $ffO;
+  color: #333;
 }
 
 .price-sale {
-	font: 400 14px/14px $ffO;
-	color: #333;
-	display: block;
+  font: 400 14px/14px $ffO;
+  color: #333;
+  display: block;
 
-	&:after {
-		margin-top: 4px;
-		display: block;
-		content: attr(data-price-actual);
-		text-decoration: line-through;
-		color: #ccc;
-	}
+  &:before {
+    margin-bottom: 4px;
+    display: block;
+    content: attr(data-price-actual);
+    text-decoration: line-through;
+    color: #ccc;
+  }
 }
