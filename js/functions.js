@@ -1,5 +1,21 @@
 (function ($) {$(document).ready(function () {
 
+    //comment-modal
+
+  $('.trigger-comment').click(function() {
+    $(this).next($('.user-comment__modal'))
+    .fadeIn()
+    .removeClass('hidden')
+    .addClass('visible');
+  });
+
+  $('.closebtn').click(function() {
+    $('.user-comment__modal')
+      .fadeOut()
+      .addClass('hidden')
+      .removeClass('visible');
+  });
+
     //carousel
 
   $('.slider__controls-buttons').on('click', function(e) {

@@ -30,21 +30,13 @@ body {
 }
 
 .empty {
-  height: 360px; // задается относительно макета
+  height: 580px; // задается относительно макета
 }
 //******************************************************* //
 
 .row {
   padding: 0 5px;
   @include clr;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
 }
 
 [class*="col-"]{padding: 0;}

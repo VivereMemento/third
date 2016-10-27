@@ -1,3 +1,11 @@
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 .toy-name {
   margin-bottom: 5px;
   font: 400 14px/14px $ffO;
@@ -23,4 +31,12 @@
     text-decoration: line-through;
     color: #ccc;
   }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
 }

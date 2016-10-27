@@ -38,6 +38,14 @@
   font-style: normal;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 .toy-name {
   margin-bottom: 5px;
   font: 400 14px/14px "Open Sans", Arial, sans-serif;
@@ -63,4 +71,12 @@
   content: attr(data-price-actual);
   text-decoration: line-through;
   color: #ccc;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
 }

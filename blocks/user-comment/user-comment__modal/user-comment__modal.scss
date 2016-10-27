@@ -1,0 +1,93 @@
+.user-comment__modal {
+  padding: 30px 40px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  right: 20px;
+
+  &-heading {
+    margin-bottom: 30px;
+    font: 600 16px/16px $ffO;
+    color: #333;
+    text-align: left;
+  }
+}
+
+.user-comment__form {
+  margin-top: 0;
+  float: none;
+}
+
+.form {
+  @include clr;
+
+  & div {
+    width: 33.3333%;
+    padding-right: 50px;
+    float: left;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__contnet {
+    text-align: justify;
+
+    &-text {
+      font: 400 12px/12px $ffO;
+      color: #333;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    background-color: #ebedee;
+    border: none;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 25px;
+    padding: 5px 15px;
+    background-color: #ebedee;
+    border: none;
+  }
+}
+
+.button {
+  width: 100%;
+  padding: 18px 20px;
+  color: #fff;
+  text-transform: capitalize;
+  background: #a2ca28;
+  border: none;
+  @include br(3px)
+  @include transition;
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.closebtn {
+  width: 60px;
+  height: 60px;
+  padding: 19px;
+  font-size: 35px;
+  color: #000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
