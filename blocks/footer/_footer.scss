@@ -3,129 +3,169 @@
 //---------------------------//
 
 // html {
-// 	width: 100%;
-// 	height: 100%;
+//  width: 100%;
+//  height: 100%;
 // }
 
 // body {
-// 	background: #fff;
-// 	width: 100%;
-// 	height: 100%;
+//  background: #fff;
+//  width: 100%;
+//  height: 100%;
 //
 
 .footer {
-	height: 580px;
-	margin-top: -580px;
-	background-color: #0d1119;
-	position: relative;
+  height: 580px;
+  margin-top: -580px;
+  position: relative;
+
+  &__top {
+    padding: 40px 0 35px 0;
+    background-color: #f4f6f8;
+    border-bottom: 3px solid $red;
+  }
+
+  &__middle {
+    padding: 45px 0 17px 0;
+    border-bottom: 1px solid #ebedee;
+
+    &__wrap {
+      @include clr;
+    }
+  }
+
+  &__bottom {
+    padding: 25px 0 20px 0;
+  }
 }
 
-.resources {
-	padding-right: 40px;
+//footer__top *************************** //
+
+.offers {
+  @include clr;
+
+  &__item {
+    padding: 75px 35px 0 35px;
+    text-align: center;
+
+    &.pic-1 {
+      background: url(../img/offerImg-1.png) no-repeat top center;
+    }
+    &.pic-2 {
+      background: url(../img/offerImg-2.png) no-repeat top center;
+    }
+    &.pic-3 {
+      background: url(../img/offerImg-3.png) no-repeat top center;
+    }
+    &.pic-4 {
+      background: url(../img/offerImg-4.png) no-repeat top center;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 15px;
+    font: 700 16px/16px $ffL;
+    color: $red;
+  }
+
+  &__link {
+
+    color: #333;
+    line-height: 20px;
+
+    &:hover {
+      text-decoration: none;
+      color: $red;
+    }
+  }
 }
 
-.footer__link {
-	font: 400 1.071em/14px $ffO;
-	color: #fff;
+// footer__middle ********************* //
 
-	&:hover {
-		color: #fff;
-		text-decoration: underline;
-	}
+.menu__item_footer-mods {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0;
 }
 
-.footer__text {
-	margin-top: 23px;
-	font: 400 1em/24px $ffO;
-	color: #8297a7;
+.menu__link_footer-mods:hover {
+  text-decoration: none;
+  color: $red;
 }
 
-.contact {
-	@include clr;
+.navbar_footer-mods {
+  padding: 0;
+  border: none;
+
+  &__item {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    font: 400 13px/13px $ffO;
+    color: #333;
+  }
 }
 
-.about {
-	padding-right: 20px;
+.mail {
+  margin-bottom: 25px;
 }
 
-.form {
-
+.mail__input {
+  width: 100%;
+  padding: 10px 25px 10px 15px;
+  font: 400 1em/13px $ffL;
+  border: 1px solid #ebedee;
+  @include br(50px);
+  @include placeholder {
+    color: #666;
+  }
 }
 
-.footer__mail {
-	margin-top: 35px;
+.footer__middle__logo {
+  font: 600 18px/18px $ffO;
+  color: #333;
+
+  &:hover {
+    text-decoration: none;
+    color: #333;
+  }
 }
 
-.form__name, .form__email {
-	padding: 18px 20px;
-	background-color: #fff;
-	border: none;
-	@include br(3px);
-	@include placeholder {
-		font: 400 1em $ffO;
-		color: #83969f;
-		text-transform: capitalize;
-	}
+.footer__middle__copyright {
+  margin-top: 18px;
+  display: block;
 }
 
-.form__name {width: 29%;}
+.social__list_footer-mods {
+  margin-top: 35px;
+  float: none;
 
-.form__email {width: 40%;}
+  &__link {
 
-.button {
-	padding: 18px 20px;
-	color: #fff;
-	text-transform: capitalize;
-	background: #a2ca28;
-	border: none;
-	@include br(3px)
-	@include transition;
+    background-color: #fff;
+    border: 2px solid $red;
 
-	&:hover {
-		background-color: $red;
-	}
+    &:hover, &:hover .fa {
+      color: #fff;
+      background-color: $red;
+    }
+  }
+
+  &__fa {
+    font-size: 13px;
+    color: $red;
+  }
 }
 
-// .social__list {
-// 	margin-top: 23px;
-// }
+// footer__bottom ************************* //
 
-// .social__item {
-// 	width: 32px;
-// 	height: 32px;
-// 	background: #2c3b42;
-// 	display: inline-block;
+.footer__bottom-promo {
+  font: 400 13px/13px $ffO;
+  color: #333;
 
-// 	&:hover {
-// 		background: #71b6d5;
-// 	}
-// }
-
-// .social__link {
-// 	width: 32px;
-// 	height: 32px;
-// 	padding: 6px;
-// 	display: block;
-// }
-
-// .fa {
-// 	font-size: 20px;
-// 	color: #fff;
-// }
-
-// .facebook {padding-left: 10px;}
-// .facebook:hover {
-// 	background-color: #2e3192;
-// }
-
-// .twitter:hover {
-// 	background-color: #00aeef;
-// }
-
-// .youtube:hover {
-// 	background-color: #ed3123;
-// }
-
-// .linkedin:hover {
-// 	background-color: #171a8f;
-// }
+  &:hover {
+    color: $red;
+    text-decoration: none;
+  }
+}

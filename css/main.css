@@ -196,6 +196,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  font-weight: 400;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -webkit-bsckface-visibility: hidden;
@@ -228,7 +229,6 @@ body {
 }
 
 a {
-  color: #26a6d6;
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: color 0.15s linear;
@@ -1168,36 +1168,36 @@ img {
   float: none;
 }
 
-.form {
+.modal-form {
   *zoom: 1;
 }
 
-.form:after {
+.modal-form:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-.form div {
+.modal-form div {
   width: 33.3333%;
   padding-right: 50px;
   float: left;
 }
 
-.form div:last-child {
+.modal-form div:last-child {
   padding-right: 0;
 }
 
-.form__contnet {
+.modal-form__contnet {
   text-align: justify;
 }
 
-.form__contnet-text {
-  font: 400 12px/12px "Open Sans", Arial, sans-serif;
+.modal-form__text {
+  font: 400 12px/20px "Open Sans", Arial, sans-serif;
   color: #333;
 }
 
-.form__input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
@@ -1206,11 +1206,11 @@ img {
   border: none;
 }
 
-.form__textarea {
+.modal-form__textarea {
   width: 100%;
   height: 90px;
   margin-bottom: 25px;
-  padding: 5px 15px;
+  padding: 15px 15px;
   background-color: #ebedee;
   border: none;
 }
@@ -1256,115 +1256,185 @@ img {
 .footer {
   height: 580px;
   margin-top: -580px;
-  background-color: #0d1119;
   position: relative;
 }
 
-.resources {
-  padding-right: 40px;
+.footer__top {
+  padding: 40px 0 35px 0;
+  background-color: #f4f6f8;
+  border-bottom: 3px solid #ff3801;
 }
 
-.footer__link {
-  font: 400 1.071em/14px "Open Sans", Arial, sans-serif;
-  color: #fff;
+.footer__middle {
+  padding: 45px 0 17px 0;
+  border-bottom: 1px solid #ebedee;
 }
 
-.footer__link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.footer__text {
-  margin-top: 23px;
-  font: 400 1em/24px "Open Sans", Arial, sans-serif;
-  color: #8297a7;
-}
-
-.contact {
+.footer__middle__wrap {
   *zoom: 1;
 }
 
-.contact:after {
+.footer__middle__wrap:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-.about {
-  padding-right: 20px;
+.footer__bottom {
+  padding: 25px 0 20px 0;
 }
 
-.footer__mail {
+.offers {
+  *zoom: 1;
+}
+
+.offers:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.offers__item {
+  padding: 75px 35px 0 35px;
+  text-align: center;
+}
+
+.offers__item.pic-1 {
+  background: url(../img/offerImg-1.png) no-repeat top center;
+}
+
+.offers__item.pic-2 {
+  background: url(../img/offerImg-2.png) no-repeat top center;
+}
+
+.offers__item.pic-3 {
+  background: url(../img/offerImg-3.png) no-repeat top center;
+}
+
+.offers__item.pic-4 {
+  background: url(../img/offerImg-4.png) no-repeat top center;
+}
+
+.offers__heading {
+  margin-bottom: 15px;
+  font: 700 16px/16px "Lato", Arial, sans-serif;
+  color: #ff3801;
+}
+
+.offers__link {
+  color: #333;
+  line-height: 20px;
+}
+
+.offers__link:hover {
+  text-decoration: none;
+  color: #ff3801;
+}
+
+.menu__item_footer-mods {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.menu__link_footer-mods:hover {
+  text-decoration: none;
+  color: #ff3801;
+}
+
+.navbar_footer-mods {
+  padding: 0;
+  border: none;
+}
+
+.navbar_footer-mods__item {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.navbar_footer-mods__link {
+  font: 400 13px/13px "Open Sans", Arial, sans-serif;
+  color: #333;
+}
+
+.mail {
+  margin-bottom: 25px;
+}
+
+.mail__input {
+  width: 100%;
+  padding: 10px 25px 10px 15px;
+  font: 400 1em/13px "Lato", Arial, sans-serif;
+  border: 1px solid #ebedee;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.mail__input:-ms-input-placeholder {
+  color: #666;
+}
+
+.mail__input:-moz-placeholder {
+  color: #666;
+}
+
+.mail__input::-moz-placeholder {
+  color: #666;
+}
+
+.mail__input::-webkit-input-placeholder {
+  color: #666;
+}
+
+.mail__input::placeholder {
+  color: #666;
+}
+
+.footer__middle__logo {
+  font: 600 18px/18px "Open Sans", Arial, sans-serif;
+  color: #333;
+}
+
+.footer__middle__logo:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer__middle__copyright {
+  margin-top: 18px;
+  display: block;
+}
+
+.social__list_footer-mods {
   margin-top: 35px;
+  float: none;
 }
 
-.form__name, .form__email {
-  padding: 18px 20px;
+.social__list_footer-mods__link {
   background-color: #fff;
-  border: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
+  border: 2px solid #ff3801;
 }
 
-.form__name:-ms-input-placeholder, .form__email:-ms-input-placeholder {
-  font: 400 1em "Open Sans", Arial, sans-serif;
-  color: #83969f;
-  text-transform: capitalize;
-}
-
-.form__name:-moz-placeholder, .form__email:-moz-placeholder {
-  font: 400 1em "Open Sans", Arial, sans-serif;
-  color: #83969f;
-  text-transform: capitalize;
-}
-
-.form__name::-moz-placeholder, .form__email::-moz-placeholder {
-  font: 400 1em "Open Sans", Arial, sans-serif;
-  color: #83969f;
-  text-transform: capitalize;
-}
-
-.form__name::-webkit-input-placeholder, .form__email::-webkit-input-placeholder {
-  font: 400 1em "Open Sans", Arial, sans-serif;
-  color: #83969f;
-  text-transform: capitalize;
-}
-
-.form__name::placeholder, .form__email::placeholder {
-  font: 400 1em "Open Sans", Arial, sans-serif;
-  color: #83969f;
-  text-transform: capitalize;
-}
-
-.form__name {
-  width: 29%;
-}
-
-.form__email {
-  width: 40%;
-}
-
-.button {
-  padding: 18px 20px;
+.social__list_footer-mods__link:hover, .social__list_footer-mods__link:hover .fa {
   color: #fff;
-  text-transform: capitalize;
-  background: #a2ca28;
-  border: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-ttransition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  background-color: #ff3801;
 }
 
-.button:hover {
-  background-color: #ff3801;
+.social__list_footer-mods__fa {
+  font-size: 13px;
+  color: #ff3801;
+}
+
+.footer__bottom-promo {
+  font: 400 13px/13px "Open Sans", Arial, sans-serif;
+  color: #333;
+}
+
+.footer__bottom-promo:hover {
+  color: #ff3801;
+  text-decoration: none;
 }
 
 /*==========  Desktop First Method  ==========*/

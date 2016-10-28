@@ -15,6 +15,7 @@ body {
   font-family: $ffO;
   font-size: 13px;
   line-height: 24px;
+  font-weight: 400;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -webkit-bsckface-visibility: hidden;
@@ -42,7 +43,6 @@ body {
 [class*="col-"]{padding: 0;}
 
 a {
-  color: #26a6d6;
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: color 0.15s linear;

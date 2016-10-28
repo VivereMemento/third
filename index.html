@@ -484,29 +484,29 @@
           <h1 class="title similar-products__title">Отзывы наших покупателей и ретинг товара</h1>
           <span class="user-comment-trigger trigger-comment">Оставить свой комментарий</span>
           <div class="user-comment__modal hidden">
-            <form action="" class="form user-comment__form">
+            <form action="" class="modal-form user-comment__form">
               <h3 class="user-comment__modal-heading">Оставте свой комментарий</h3>
-              <div class="form__content">
-                <p class="foorm__content-text">
+              <div class="modal-form__content">
+                <p class="modal-form__text">
                   Используйте данную форму только для того, чтобы оставить отзыв о товаре
                 </p>
-                <p class="foorm__content-text">
+                <p class="modal-form__text">
                   Все комментарии не касающиеся отзывов о продукте будут удалены!
                 </p>
-                <p class="foorm__content-text">
+                <p class="modal-form__text">
                   Для вопросов о дате поступления, наличии, использовании, характеристиках товара и прочих используйте функцию задать вопрос.
                 </p>
-                <p class="foorm__content-text">
+                <p class="modal-form__text">
                   <b>Комментарий будет выведен только после предварительной проверки нашими сотрудниками.</b>
                 </p>
               </div>
-              <div class="form__data">
-                <input class="form__input" type="text" placeholder="Имя">
-                <input  class="form__input" type="text" placeholder="Город">
+              <div class="modal-form__data">
+                <input class="modal-form__input" type="text" placeholder="Имя">
+                <input  class="modal-form__input" type="text" placeholder="Город">
               </div>
               <div class="form__comment">
-                <textarea class="form__textarea" placeholder="Ваше сообщение"></textarea>
-                <input class="button button_view_action" type="submit" value="Отправить">
+                <textarea class="modal-form__textarea" placeholder="Ваше сообщение"></textarea>
+                <input class="button" type="submit" value="Отправить">
               </div>
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </form>
@@ -580,7 +580,129 @@
   ================================================================== -->
 
   <footer class="footer">
-    aaaa
+    <div class="footer__top">
+      <div class="container">
+        <div class="row">
+          <div class="offers">
+            <div class="offers__item pic-1 col-lg-3">
+              <h4 class="offers__heading">Бесплтная доставка</h4>
+              <a class="offers__link">По всей Украине без предоплаты и коммисий за перевод денег</a>
+            </div>
+            <div class="offers__item pic-2 col-lg-3">
+              <h4 class="offers__heading">Огромный ассортимент</h4>
+              <a class="offers__link">В нашем магазине предоставлено более 50000 товаров в наличии</a>
+            </div>
+            <div class="offers__item pic-3 col-lg-3">
+              <h4 class="offers__heading">100% Качественные товары</h4>
+              <a class="offers__link">Все товары сертифицированы и абсолютно безопасны для детей</a>
+            </div>
+            <div class="offers__item pic-4 col-lg-3">
+              <h4 class="offers__heading">Режим работы</h4>
+              <a class="offers__link">Мы работаем с понедельника по воскресенье с 7:00 по 20:00</a>
+            </div>
+          </div> <!-- //offers -->
+        </div> <!-- //row -->
+      </div> <!-- //container -->
+    </div> <!-- //footer__top -->
+    <div class="footer__middle">
+      <div class="container">
+        <div class="row">
+          <div class="footer__middle__wrap">
+            <div class="footer__middle__item pic-1 col-lg-3">
+              <a class="footer__middle__logo">Panama.UA</a>
+              <span class="footer__middle__copyright">Самый детский интернет магазин <br> &copy; 2012-2016</span>
+              <ul class="social__list social__list_footer-mods">
+                <li class="social__item">
+                  <a href="#" class="social__link social__list_footer-mods__link"><i class="fa social__list_footer-mods__fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link social__list_footer-mods__link"><i class="fa social__list_footer-mods__fa fa-vk" aria-hidden="true"></i></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link social__list_footer-mods__link"><i class="fa social__list_footer-mods__fa fa-odnoklassniki" aria-hidden="true""></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__middle__item pic-2 col-lg-3">
+              <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item_footer-mods">
+                  <a href="#" class="menu__link menu__link_footer-mods">
+                    <div class="menu__link-text">О магазине</div>
+                  </a>
+                </li>
+                <li class="menu__item menu__item_footer-mods">
+                  <a href="#" class="menu__link menu__link_footer-mods">
+                    <div class="menu__link-text">Baby клуб</div>
+                  </a>
+                </li>
+                <li class="menu__item menu__item_footer-mods">
+                  <a href="#" class="menu__link menu__link_footer-mods">
+                    <div class="menu__link-text">Доставка и оплата</div>
+                  </a>
+                </li>
+                <li class="menu__item menu__item_footer-mods">
+                  <a href="#" class="menu__link menu__link_footer-mods">
+                    <div class="menu__link-text">Новости</div>
+                  </a>
+                </li>
+                <li class="menu__item menu__item_footer-mods">
+                  <a href="#" class="menu__link menu__link_footer-mods">
+                    <div class="menu__link-text">Контакты</div>
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- //menu -->
+            </div>
+            <div class="footer__middle__item pic-3 col-lg-3">
+              <ul class="navbar navbar_footer-mods">
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Игры и игрушки</a>
+                </li>
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Школа и творчество</a>
+                </li>
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Одежда</a>
+                </li>
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Обувь</a>
+                </li>
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Кухня и кормление</a>
+                </li>
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Гигиена и уход</a>
+                </li>
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Спорт и отдых</a>
+                </li>
+                <li class="navbar__item navbar_footer-mods__item">
+                  <a href="#" class="navbar__link navbar_footer-mods__link">Детская и коляски</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__middle__item pic-4 col-lg-3">
+              <div class="mail">
+                <form class="mail__item">
+                    <input name="" type="text" placeholder="E-mail" class="mail__input">
+                </form>
+              </div> <!-- //mail -->
+              <span class="callback__phone-number">(044) 593 82 39</span>
+              <span class="callback__phone-number">0 800 50 77 12</span>
+              <button class="callback__button">Обратный звонок</button>
+            </div>
+          </div> <!-- //footer__middle__wrap -->
+        </div> <!-- //row -->
+      </div> <!-- //container -->
+    </div> <!-- //footer__middle -->
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row">
+          <a href="#" class="footer__bottom-promo">Интернет магазин игрушек, товаров для мам и детей</a>
+        </div> <!-- //row -->
+      </div> <!-- //container -->
+    </div> <!-- //footer__bottom -->
   </footer>
   <!-- Slider -->
   <script src="js/slider.js"></script>
