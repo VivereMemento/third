@@ -44,7 +44,7 @@
   @include clr;
 
   &__item {
-    padding: 75px 35px 0 35px;
+    padding: 75px 33px 0 33px;
     text-align: center;
 
     &.pic-1 {
@@ -156,6 +156,22 @@
     font-size: 13px;
     color: $red;
   }
+}
+
+.footer-callback {
+  text-align: right;
+}
+
+.callback__button_footer-mods {
+  display: inline-block;
+  margin-top: 5px;
+  font: 400 0.923em/12px $ffL;
+  color: #fff;
+  padding: 8px 13px;
+  background-color: $green;
+  border: none;
+  display: inline-block;
+  @include br(3px);
 }
 
 // footer__bottom ************************* //

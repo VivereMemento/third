@@ -3,6 +3,10 @@
 
 .header__top {
   border-bottom: 1px solid #ebedee;
+
+  &__wrap {
+    position: relative;
+  }
 }
 
 .header__menu {
@@ -15,6 +19,7 @@
   padding: 30px 0;
   border-bottom: 1px solid #ebedee;
   @include clr;
+  position: relative;
 }
 
 .header__logo, .callback, .header__search {
@@ -46,6 +51,10 @@
   }
 }
 
+.text-eng {
+  display: none;
+}
+
 .header__search {
   padding: 13px 0;
   @include clr;
@@ -64,4 +73,8 @@
       color: #666;
     }
   }
+}
+
+.trigger {
+  display: none;
 }

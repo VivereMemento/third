@@ -1,33 +1,179 @@
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-  .main-heading {
-    font-size: 1.8em;
-    line-height: 20px;
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  // header__top **************************** //
+  .header__top-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
   }
 
-  .post-heading {
-    font-size: 1em;
-    text-indent: 90px;
+  .menu {
+    margin-left: 20px;
+
+    &__item {
+      padding: 15px 0 10px 0;
+    }
   }
+
+  .user__menu {
+    display: none;
+    position: absolute;
+    bottom: -44px;
+    right: 0;
+  }
+
+  // header__middlw ************************* //
+.header__middle-container {
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+}
+
+  .header__middle__wrap {
+    padding: 0;
+  }
+
+  .trigger {
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    font-size: 30px;
+    line-height: 28px;
+    cursor: pointer;
+    display: block;
+
+    &-nav, &-search {
+      border-right: 1px solid #ebedee;
+    }
+
+    &-favorite, &-user, &-basket {
+      border-left: 1px solid #ebedee;
+    }
+
+    &-search {
+      background: url(../img/tr-search.png) no-repeat center center;
+    }
+    &-favorite {
+      background: url(../img/tr-favorite.png) no-repeat center center;
+    }
+    &-user {
+      background: url(../img/tr-user.png) no-repeat center center;
+    }
+    &-basket {
+      background: url(../img/tr-basket.png) no-repeat center center;
+    }
+  }
+
+  .callback {
+    width: 47%;
+    padding: 0;
+    text-align: right;
+    position: absolute;
+    top: -39px;
+    right: 0;
+
+    &__phone-number {
+      font-size: 16px;
+    }
+
+    &__button {
+      margin: 0;
+      padding: 11px 26px;
+      line-height: 16px;
+      font-size: 16px;
+      border-radius: 0;
+      display: inline-block;
+    }
+  }
+
+  .header__logo {
+    width: 33%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &__wrap {
+      width: 175px;
+      padding: 5px 0;
+    }
+  }
+
+  .header__search {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 925px) {
+  .header__top__wrap {
+    height: 38px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .callback {
+    width: 100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .trigger-search,
+  .trigger-favorite,
+  .trigger-user {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .header__logo {
+    width: 50%;
+  }
+
+  .header__logo__wrap {
+    width: 140px;
+    padding: 4px 0;
+  }
+
+  .trigger {
+    width: 45px;
+    height: 45px;
+    padding: 9px;
+  }
+
+  .callback__phone-number {
+    font-size: 12px;
+  }
+  
+  .text-eng {
+    display: block;
+  }
+
+  .text-rus {
+    display: none;
+  }
+
+  .trigger-search,
+  .trigger-favorite,
+  .trigger-user {
+    display: none;
+  }
+
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-  .navbar {
-      width: 100%;
-      padding-top: 150px;
-    }
 
-  .header__heading {
-    bottom: 20%;
-  }
-  .main-heading {
-    font-size: 1.8em;
-    line-height: 20px;
-  }
-
-  .post-heading {
-    font-size: 1em;
-    text-indent: 90px;
-  }
 }

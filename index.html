@@ -23,6 +23,12 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <!-- bxSlider Javascript file -->
   <script src="js/jquery.bxslider.min.js"></script>
+  <!-- picturefill -->
+  <script src="js/picturefill.min.js"></script>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -40,77 +46,96 @@
 
   <header class="header">
     <div class="header__top">
-      <div class="container">
+      <div class="container header__top-container">
         <div class="row">
-          <div class="header__menu">
-            <div class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    <div class="menu__link-text">О магазине</div>
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    <div class="menu__link-text">Baby клуб</div>
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    <div class="menu__link-text">Доставка и оплата</div>
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    <div class="menu__link-text">Новости</div>
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    <div class="menu__link-text">Контакты</div>
-                  </a>
-                </li>
-              </ul>
-            </div> <!-- //menu -->
-            <div class="menu user__menu">
-              <ul class="menu__list user__menu__list">
-                <li class="menu__item user__menu__item">
-                  <a href="#" class="menu__link user__menu__link">
-                    <div class="user__menu__link-icon"><img src="img/user.png" alt="" class="user__menu__link-icon-pic"></div>
-                    <div class="menu__link-text user__menu__link-text">Вход</div>
-                  </a>
-                </li>
-                <li class="menu__item user__menu__item">
-                  <a href="#" class="menu__link user__menu__link">
-                    <div class="user__menu__link-icon"><img src="img/heart.png" alt="" class="user__menu__link-icon-pic"></div>
-                    <div class="menu__link-text user__menu__link-text">Избранное</div>
-                  </a>
-                </li>
-                <li class="menu__item user__menu__item user__menu__item_colored">
-                  <a href="#" class="menu__link user__menu__link user__menu__link_colored">
-                    <div class="user__menu__link-icon"><img src="img/basket.png" alt="" class="user__menu__link-icon-pic"></div>
-                    <div class="menu__link-text user__menu__link-text">Корзина <span class="user-count">(2)</span></div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div> <!-- //header__menu -->
+          <div class="header__top__wrap">
+            <div class="header__menu">
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      <div class="menu__link-text">О магазине</div>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      <div class="menu__link-text">Baby клуб</div>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      <div class="menu__link-text">Доставка и оплата</div>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      <div class="menu__link-text">Новости</div>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      <div class="menu__link-text">Контакты</div>
+                    </a>
+                  </li>
+                </ul>
+              </div> <!-- //menu -->
+              <div class="menu user__menu">
+                <ul class="menu__list user__menu__list">
+                  <li class="menu__item user__menu__item">
+                    <a href="#" class="menu__link user__menu__link">
+                      <div class="user__menu__link-icon"><img src="img/user.png" alt="" class="user__menu__link-icon-pic"></div>
+                      <div class="menu__link-text user__menu__link-text">Вход</div>
+                    </a>
+                  </li>
+                  <li class="menu__item user__menu__item">
+                    <a href="#" class="menu__link user__menu__link">
+                      <div class="user__menu__link-icon"><img src="img/heart.png" alt="" class="user__menu__link-icon-pic"></div>
+                      <div class="menu__link-text user__menu__link-text">Избранное</div>
+                    </a>
+                  </li>
+                  <li class="menu__item user__menu__item user__menu__item_colored">
+                    <a href="#" class="menu__link user__menu__link user__menu__link_colored">
+                      <div class="user__menu__link-icon"><img src="img/basket.png" alt="" class="user__menu__link-icon-pic"></div>
+                      <div class="menu__link-text user__menu__link-text">Корзина <span class="user-count">(2)</span></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> <!-- //header__menu -->
+          </div> <!-- //header__top__wrap -->
         </div> <!-- //row -->
       </div> <!-- //container -->
     </div> <!-- //header__top -->
     <div class="header__middle">
-      <div class="container">
+      <div class="container header__middle-container">
         <div class="row">
           <div class="header__middle__wrap">
+            <span class="trigger-nav trigger float-left">&#9776;</span>
+            <span class="trigger-search trigger float-left"></span>
+            <span class="trigger-favorite trigger float-right"></span>
+            <span class="trigger-user trigger float-right"></span>
+            <span class="trigger-basket trigger float-right"></span>
             <div class="callback float-left">
               <span class="callback__phone-number">(044) 593 82 39</span>
               <span class="callback__phone-number">0 800 50 77 12</span>
-              <button class="callback__button">Обратный звонок</button>
+              <button class="callback__button">
+                <span class="text-eng">Callback</span>
+                <span class="text-rus">Обратный звонок</span>
+              </button>
             </div> <!-- //callback -->
             <div class="header__logo float-left">
               <div class="header__logo__wrap">
                 <a href="#" class="logo__link">
-                  <img src="img/logo.png" alt="Panama" class="logo__pic">
+                  <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source srcset="img/logo.png" media="(min-width: 992px)">
+                    <source srcset="img/media-logo.png" media="(min-width: 768px)">
+                    <source srcset="img/media-logo.png" media="(min-width: 425px)">
+                    <source srcset="img/logo-320.png" media="(min-width: 375px)">
+                    <source srcset="img/logo-320.png" media="(min-width: 320px)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img src="img/logo.png" alt="Panama" class="logo__pic">
+                  </picture>
                 </a>
               </div>
             </div> <!-- //header__logo -->                                          
@@ -126,7 +151,7 @@
       </div> <!-- //container -->
     </div> <!-- //header__middle -->
     <!-- BEGIN nav -->
-    <nav class="nav">
+    <nav class="nav trigger-victim">
       <div class="container">
         <div class="row">
           <ul class="navbar">
@@ -154,6 +179,7 @@
             <li class="navbar__item">
               <a href="#" class="navbar__link">Детская и коляски</a>
             </li>
+            <a href="javascript:void(0)" class="closebtn nav-closebtn dspblk" onclick="closeNav()">&times;</a>
           </ul>
         </div> <!-- //row -->
       </div> <!-- //container -->
@@ -197,7 +223,7 @@
   <section class="demonstration">
     <div class="container">
       <div class="row">
-        <div class="slideshow  col-lg-6">
+        <div class="slideshow">
           <ul class="slideshow__list">
             <li class="slideshow__item">
               <a href="#" class="slideshow__pic">
@@ -226,23 +252,23 @@
             </li>
           </ul>
           <div class="slideshow__display">
-            <img src="img/slidepicBig-1.jpg" alt="" class="slideshow__display__img">
+            <img src="img/slidepicBig-1.jpg" alt="" class="slideshow__display__img responsive">
           </div>
         </div> <!-- //slideshow -->
-        <div class="demonstration__content col-lg-6">
+        <div class="demonstration__content col-xs-12">
           <div class="demonstration__content-heading">
             <span class="toy-name content-headingg__toy-name">Lego creator</span>
             <h1 class="title content-heading__title">Домик на холме, большая коробка <br> с деталями и кубиками</h1>
           </div> <!-- //demonstration__content__heading -->
           <div class="demonstration__content-user">
-            <div class="price col-lg-6">
+            <div class="price col-lg-6 col-md-5">
               <span data-price-actual="6574 грн" class="price-sale price-sale_mods">5748 грн</span>
             </div>
-            <div class="comments col-lg-2">
+            <div class="comments col-lg-2 col-md-3">
               <span class="comments__voit"><span class="comments__voit-pic" style="width: 100%;"></span></span>
               <a class="comments__count">54 отзыва</a>
             </div>
-            <div class="social col-lg-4">
+            <div class="social col-lg-4 col-md-4">
               <ul class="social__list">
                 <li class="social__item">
                   <a href="#" class="social__link social__link-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -584,19 +610,19 @@
       <div class="container">
         <div class="row">
           <div class="offers">
-            <div class="offers__item pic-1 col-lg-3">
+            <div class="offers__item pic-1 col-lg-3 col-md-3 col-sm-6 col-xs-6">
               <h4 class="offers__heading">Бесплтная доставка</h4>
               <a class="offers__link">По всей Украине без предоплаты и коммисий за перевод денег</a>
             </div>
-            <div class="offers__item pic-2 col-lg-3">
+            <div class="offers__item pic-2 col-lg-3 col-md-3 col-sm-6 col-xs-6">
               <h4 class="offers__heading">Огромный ассортимент</h4>
               <a class="offers__link">В нашем магазине предоставлено более 50000 товаров в наличии</a>
             </div>
-            <div class="offers__item pic-3 col-lg-3">
+            <div class="offers__item pic-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
               <h4 class="offers__heading">100% Качественные товары</h4>
               <a class="offers__link">Все товары сертифицированы и абсолютно безопасны для детей</a>
             </div>
-            <div class="offers__item pic-4 col-lg-3">
+            <div class="offers__item pic-4 col-lg-3 col-md-3 col-sm-6 col-xs-6">
               <h4 class="offers__heading">Режим работы</h4>
               <a class="offers__link">Мы работаем с понедельника по воскресенье с 7:00 по 20:00</a>
             </div>
@@ -608,7 +634,7 @@
       <div class="container">
         <div class="row">
           <div class="footer__middle__wrap">
-            <div class="footer__middle__item pic-1 col-lg-3">
+            <div class="footer__middle__item footer-logo pic-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <a class="footer__middle__logo">Panama.UA</a>
               <span class="footer__middle__copyright">Самый детский интернет магазин <br> &copy; 2012-2016</span>
               <ul class="social__list social__list_footer-mods">
@@ -623,7 +649,7 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__middle__item pic-2 col-lg-3">
+            <div class="footer__middle__item pic-2 col-lg-3 col-md-3 col-sm-3 col-xs-6">
               <div class="menu">
               <ul class="menu__list">
                 <li class="menu__item menu__item_footer-mods">
@@ -654,7 +680,7 @@
               </ul>
             </div> <!-- //menu -->
             </div>
-            <div class="footer__middle__item pic-3 col-lg-3">
+            <div class="footer__middle__item pic-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
               <ul class="navbar navbar_footer-mods">
                 <li class="navbar__item navbar_footer-mods__item">
                   <a href="#" class="navbar__link navbar_footer-mods__link">Игры и игрушки</a>
@@ -682,15 +708,17 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__middle__item pic-4 col-lg-3">
+            <div class="footer__middle__item footer-mail pic-4 col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <div class="mail">
                 <form class="mail__item">
                     <input name="" type="text" placeholder="E-mail" class="mail__input">
                 </form>
               </div> <!-- //mail -->
-              <span class="callback__phone-number">(044) 593 82 39</span>
-              <span class="callback__phone-number">0 800 50 77 12</span>
-              <button class="callback__button">Обратный звонок</button>
+              <div class="footer-callback">
+                <span class="callback__phone-number footer-callback__phone-number">(044) 593 82 39</span>
+                <span class="callback__phone-number footer-callback__phone-number">0 800 50 77 12</span>
+                <button class="callback__button callback__button_footer-mods">Обратный звонок</button>
+              </div>
             </div>
           </div> <!-- //footer__middle__wrap -->
         </div> <!-- //row -->

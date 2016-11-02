@@ -2,39 +2,42 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  .nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-  }
 
-  .navbar {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    position: fixed;
-    z-index: 5;
+}
 
-    &__item {
-      display: block;
-    }
-  }
+@media only screen and (max-width : 925px) {
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  
+  .slideshow {
+    width: 100%;
+    margin-bottom: 50px;
+    float: none;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .slideshow {
+    width: 100%;
+    margin-bottom: 50px;
+    float: none;
 
+    &__list {
+      display: none;
+    }
+
+    &__display {
+      margin: 0;
+    }
+  }
 }
 
 /* Custom, iPhone Retina */
